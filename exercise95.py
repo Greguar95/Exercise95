@@ -7,7 +7,6 @@ except:
 dc = dict()
 for line in fhand:
     if line.startswith('From '):
-        line = line.rstrip()
         words = line.split()
         eml = words[1]
         splt = eml.split('@')
